@@ -1,0 +1,60 @@
+.chart-container { 
+  width: 100%; /* Ensure the container takes available width */
+  text-align: center; /* Centers the SVG within the container */
+}
+#dataDisplay {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;  
+  font-family: sans-serif; 
+}
+.column-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 equal-width columns */
+  gap: 10px; /* Adjust spacing between columns */
+}
+
+.data-column { /* Style for individual column divs */
+   border: 1px solid #ccc;
+   padding: 10px; 
+}
+.button-link {
+  background-color: #4CAF50; /* Example color */
+  color: white; 
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;  /* Rounded corners */
+  border: none;        /* Remove default link border */
+  cursor: pointer;     /* Indicate clickability */
+} 
+
+.legend { 
+  list-style: none;
+  padding: 0;
+  display: flex; /* Make the list display horizontally */
+  flex-direction: row;  /* Arrange items in a row  */
+}
+
+.legend li {
+  margin-right: 15px;  /* Add spacing between legend items */
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  display: inline-block; 
+}
+#GasDropdown {
+  float: right;
+}
+#graph-container,
+#legend-container {
+  display: flex;
+  justify-content: center;
+}
+#error {
+  text-align: center;
+}
+
