@@ -186,6 +186,7 @@ d3.json('/GAS2').then(response => {
           const geography = key0Data['\ufeffGeography'];
           const geoDiv = document.getElementById('geo'); 
           geoDiv.textContent = geography;
+          console.log("key index",keyIndex)
     }
     
     dataSlider.addEventListener('input', () => {
